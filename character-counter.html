@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Counter — Check Twitter, SMS & Meta Description Limits | WordTools</title>
+<meta name="description" content="Free character counter with live limit bars for Twitter/X, SMS, Google meta descriptions, Instagram bios and more. Count characters instantly, with or without spaces.">
+<link rel="canonical" href="https://wordtools.example.com/character-counter.html">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Character Counter",
+  "url": "https://wordtools.example.com/character-counter.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body class="theme-purple">
+
+  <header class="site">
+    <div class="bar">
+      <a href="/" class="brand">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+      <nav class="site" id="site-nav">
+        <a href="/">Word Counter</a>
+        <a href="/character-counter.html" class="active">Character Counter</a>
+        <a href="/case-converter.html">Case Converter</a>
+        <a href="/remove-extra-spaces.html">Remove Spaces</a>
+        <a href="/text-reverser.html">Text Reverser</a>
+        <a href="/duplicate-line-remover.html">Duplicate Lines</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Character counter with limit bars.</h1>
+        <p class="lede">See your character count update live, and check it against common limits for Twitter/X, SMS, Google meta descriptions and more — so you know exactly when to stop.</p>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section class="tool" aria-label="Character counter tool">
+        <label for="text-input" class="tool-label">Your text</label>
+        <textarea id="text-input" class="input-area" placeholder="Type or paste your text here…"></textarea>
+
+        <div class="toolbar">
+          <button id="btn-paste" type="button">Paste</button>
+          <button id="btn-clear" type="button" class="primary">Clear</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="n" id="stat-chars">0</span><span class="l">Characters</span></div>
+          <div class="stat"><span class="n" id="stat-chars-nospace">0</span><span class="l">Chars (no spaces)</span></div>
+        </div>
+
+        <div style="margin-top:26px;">
+          <div class="limit-row" data-limit="280">
+            <div class="limit-head"><span>Twitter / X post</span><span class="limit-count">0 / 280</span></div>
+            <div class="limit-track"><div class="limit-fill"></div></div>
+          </div>
+          <div class="limit-row" data-limit="160">
+            <div class="limit-head"><span>SMS (single segment)</span><span class="limit-count">0 / 160</span></div>
+            <div class="limit-track"><div class="limit-fill"></div></div>
+          </div>
+          <div class="limit-row" data-limit="155">
+            <div class="limit-head"><span>Google meta description</span><span class="limit-count">0 / 155</span></div>
+            <div class="limit-track"><div class="limit-fill"></div></div>
+          </div>
+          <div class="limit-row" data-limit="60">
+            <div class="limit-head"><span>Google title tag</span><span class="limit-count">0 / 60</span></div>
+            <div class="limit-track"><div class="limit-fill"></div></div>
+          </div>
+          <div class="limit-row" data-limit="150">
+            <div class="limit-head"><span>Instagram bio</span><span class="limit-count">0 / 150</span></div>
+            <div class="limit-track"><div class="limit-fill"></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="more-tools">
+      <h2>More free text tools</h2>
+      <div class="tool-grid">
+        <a class="tool-card c-blue" href="/">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/></svg></span>
+          <h3>Word Counter</h3>
+          <p>Count words, characters, sentences & reading time.</p>
+        </a>
+        <a class="tool-card c-amber" href="/case-converter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 7 6l4 12"/><path d="M4.5 14h5"/><circle cx="16" cy="14" r="3.5"/><path d="M19.5 10.5v7"/></svg></span>
+          <h3>Case Converter</h3>
+          <p>Switch between UPPERCASE, Title Case, Sentence case & more.</p>
+        </a>
+        <a class="tool-card c-teal" href="/remove-extra-spaces.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4"/><path d="M4 4l5 5"/><path d="M15 20v-5h5"/><path d="M20 20l-5-5"/></svg></span>
+          <h3>Remove Extra Spaces</h3>
+          <p>Clean up messy whitespace, blank lines and line breaks.</p>
+        </a>
+        <a class="tool-card c-rose" href="/text-reverser.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h11"/><path d="M15 4l3 3-3 3"/><path d="M17 17H6"/><path d="M9 20l-3-3 3-3"/></svg></span>
+          <h3>Text Reverser</h3>
+          <p>Reverse letters, word order, or line order instantly.</p>
+        </a>
+        <a class="tool-card c-green" href="/duplicate-line-remover.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8"/><polyline points="3 14 12 19 21 14"/></svg></span>
+          <h3>Duplicate Line Remover</h3>
+          <p>Strip repeated lines from a list while keeping the order.</p>
+        </a>
+      </div>
+    </section>
+
+    <article class="content">
+      <h2>Why character count matters more than word count sometimes</h2>
+      <p>Most platforms and forms don't actually limit how many words you write — they limit how many characters. A short word like "a" and a long one like "characteristically" count the same toward a word limit, but very differently toward a character limit. That's why Twitter/X, SMS, meta descriptions and bio fields all cap characters, not words.</p>
+
+      <h2>How this tool counts characters</h2>
+      <p>The character count includes every letter, number, space and punctuation mark. The "characters without spaces" figure removes whitespace, which is useful when a platform's limit is documented as counting only visible characters.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Does SMS really limit messages to 160 characters?</dt>
+        <dd>Yes — a single SMS segment is limited to 160 characters (or 70 for messages containing non-GSM characters like emoji). Longer messages are split into multiple segments by carriers.</dd>
+        <dt>Why does Google sometimes show a shorter title than I wrote?</dt>
+        <dd>Google truncates title tags and meta descriptions based on pixel width, not a strict character count, so actual cutoff varies by the letters used. The limits shown here are commonly used safe estimates.</dd>
+      </dl>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="col brand-col">
+        <a href="/" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+        </a>
+        <p>Free browser-based text tools. No sign-up, no limits, nothing stored.</p>
+      </div>
+      <div class="col">
+        <h4>Tools</h4>
+        <a href="/">Word Counter</a>
+        <a href="/character-counter.html">Character Counter</a>
+        <a href="/case-converter.html">Case Converter</a>
+        <a href="/remove-extra-spaces.html">Remove Spaces</a>
+        <a href="/text-reverser.html">Text Reverser</a>
+        <a href="/duplicate-line-remover.html">Duplicate Lines</a>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="bottom">&copy; 2026 WordTools. All rights reserved.</div>
+  </footer>
+
+<script src="assets/character-counter.js"></script>
+<script src="assets/nav.js"></script>
+</body>
+</html>
