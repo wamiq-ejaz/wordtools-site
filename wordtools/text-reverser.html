@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Reverser — Reverse Words, Letters & Lines Online Free | WordTools</title>
+<meta name="description" content="Free online text reverser. Reverse letter order, word order, line order, or reverse the letters within each word — instantly, with no sign-up.">
+<link rel="canonical" href="https://wamiq-ejaz.github.io/wordtools-site/text-reverser.html">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Text Reverser",
+  "url": "https://wamiq-ejaz.github.io/wordtools-site/text-reverser.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body class="theme-rose">
+
+  <header class="site">
+    <div class="bar">
+      <a href="index.html" class="brand">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+      <nav class="site" id="site-nav">
+        <a href="index.html">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html" class="active">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Flip your text, four ways.</h1>
+        <p class="lede">Reverse the letter order, the word order, the line order, or just the letters inside each word — pick the flip you need.</p>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section class="tool" aria-label="Text reverser tool">
+        <label for="text-input" class="tool-label">Your text</label>
+        <textarea id="text-input" class="input-area" placeholder="Type or paste your text here…"></textarea>
+
+        <div class="toolbar">
+          <button data-action="chars" type="button">Reverse letters</button>
+          <button data-action="words" type="button">Reverse word order</button>
+          <button data-action="lines" type="button">Reverse line order</button>
+          <button data-action="each-word" type="button">Reverse letters in each word</button>
+        </div>
+        <div class="toolbar">
+          <button id="btn-paste" type="button">Paste</button>
+          <button id="btn-copy" type="button">Copy result</button>
+          <button id="btn-clear" type="button" class="primary">Clear</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="n" id="stat-chars">0</span><span class="l">Characters</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="more-tools">
+      <h2>More free text tools</h2>
+      <div class="tool-grid">
+        <a class="tool-card c-blue" href="index.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/></svg></span>
+          <h3>Word Counter</h3>
+          <p>Count words, characters, sentences & reading time.</p>
+        </a>
+        <a class="tool-card c-purple" href="character-counter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 12l4 8"/><path d="M17 4l4 8-4 8"/><line x1="10" y1="12" x2="14" y2="12"/></svg></span>
+          <h3>Character Counter</h3>
+          <p>Check length against Twitter, SMS & meta description limits.</p>
+        </a>
+        <a class="tool-card c-amber" href="case-converter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 7 6l4 12"/><path d="M4.5 14h5"/><circle cx="16" cy="14" r="3.5"/><path d="M19.5 10.5v7"/></svg></span>
+          <h3>Case Converter</h3>
+          <p>Switch between UPPERCASE, Title Case, Sentence case & more.</p>
+        </a>
+        <a class="tool-card c-teal" href="remove-extra-spaces.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4"/><path d="M4 4l5 5"/><path d="M15 20v-5h5"/><path d="M20 20l-5-5"/></svg></span>
+          <h3>Remove Extra Spaces</h3>
+          <p>Clean up messy whitespace, blank lines and line breaks.</p>
+        </a>
+        <a class="tool-card c-green" href="duplicate-line-remover.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8"/><polyline points="3 14 12 19 21 14"/></svg></span>
+          <h3>Duplicate Line Remover</h3>
+          <p>Strip repeated lines from a list while keeping the order.</p>
+        </a>
+      </div>
+    </section>
+
+    <article class="content">
+      <h2>Four ways to reverse text</h2>
+      <p><strong>Reverse letters</strong> flips the entire string back to front, turning "hello world" into "dlrow olleh" — the classic "reverse text" effect. <strong>Reverse word order</strong> keeps each word spelled correctly but flips their sequence, turning "hello world" into "world hello." <strong>Reverse line order</strong> flips the order of lines, which is handy for reversing a pasted list. <strong>Reverse letters in each word</strong> scrambles each word individually while keeping word order intact.</p>
+
+      <h2>Common uses</h2>
+      <ul>
+        <li>Creating mirror-text effects for social media captions</li>
+        <li>Reversing a list of items (e.g. flipping a leaderboard or log)</li>
+        <li>Puzzle, word game, or classroom exercises</li>
+        <li>Quick checks for palindromes</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Does reversing text change the characters themselves?</dt>
+        <dd>No — only their order changes. Reverse letters and reverse-letters-in-each-word operate on exact Unicode characters, so accented letters and emoji are preserved.</dd>
+        <dt>Can I reverse just one paragraph and not the whole box?</dt>
+        <dd>Select and copy only the part you want, paste it into the tool alone, reverse it, then paste it back into your document.</dd>
+      </dl>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="col brand-col">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+        </a>
+        <p>Free browser-based text tools. No sign-up, no limits, nothing stored.</p>
+      </div>
+      <div class="col">
+        <h4>Tools</h4>
+        <a href="index.html">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="bottom">&copy; 2026 WordTools. All rights reserved.</div>
+  </footer>
+
+<script src="assets/text-reverser.js"></script>
+<script src="assets/nav.js"></script>
+</body>
+</html>

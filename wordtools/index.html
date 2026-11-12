@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Counter — Count Words, Characters & Sentences Free | WordTools</title>
+<meta name="description" content="Free online word counter. Count words, characters, sentences, paragraphs and estimated reading time instantly as you type or paste. No sign-up, no limits.">
+<link rel="canonical" href="https://wamiq-ejaz.github.io/wordtools-site/">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Word Counter",
+  "url": "https://wamiq-ejaz.github.io/wordtools-site/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Free online tool to count words, characters, sentences and paragraphs in real time."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is the word count calculated?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The tool splits your text on whitespace and counts each resulting chunk as one word, which matches how word processors like Microsoft Word count words." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this word counter save or store my text?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. All counting happens in your browser using JavaScript. Your text is never sent to a server or saved anywhere." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good words-per-minute reading speed to estimate reading time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This tool estimates reading time using an average adult silent-reading speed of 200 words per minute, a commonly used benchmark." }
+    }
+  ]
+}
+</script>
+</head>
+<body class="theme-blue">
+
+  <header class="site">
+    <div class="bar">
+      <a href="index.html" class="brand">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+      <nav class="site" id="site-nav">
+        <a href="index.html" class="active">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Count every word, instantly.</h1>
+        <p class="lede">Paste or type your text below to see a live word count, character count, sentence count, paragraph count and estimated reading time — free, with no sign-up and no word limit.</p>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section class="tool" aria-label="Word counter tool">
+        <label for="text-input" class="tool-label">Your text</label>
+        <textarea id="text-input" class="input-area" placeholder="Start typing, or paste your text here…" aria-describedby="word-stats"></textarea>
+
+        <div class="toolbar">
+          <button id="btn-paste" type="button">Paste</button>
+          <button id="btn-copy" type="button">Copy</button>
+          <button id="btn-clear" type="button" class="primary">Clear</button>
+        </div>
+
+        <div class="stats" id="word-stats">
+          <div class="stat"><span class="n" id="stat-words">0</span><span class="l">Words</span></div>
+          <div class="stat"><span class="n" id="stat-chars">0</span><span class="l">Characters</span></div>
+          <div class="stat"><span class="n" id="stat-chars-nospace">0</span><span class="l">Chars (no spaces)</span></div>
+          <div class="stat"><span class="n" id="stat-sentences">0</span><span class="l">Sentences</span></div>
+          <div class="stat"><span class="n" id="stat-paragraphs">0</span><span class="l">Paragraphs</span></div>
+          <div class="stat"><span class="n" id="stat-readtime">0 min</span><span class="l">Reading time</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="more-tools">
+      <h2>More free text tools</h2>
+      <div class="tool-grid">
+        <a class="tool-card c-purple" href="character-counter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 12l4 8"/><path d="M17 4l4 8-4 8"/><line x1="10" y1="12" x2="14" y2="12"/></svg></span>
+          <h3>Character Counter</h3>
+          <p>Check length against Twitter, SMS & meta description limits.</p>
+        </a>
+        <a class="tool-card c-amber" href="case-converter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 7 6l4 12"/><path d="M4.5 14h5"/><circle cx="16" cy="14" r="3.5"/><path d="M19.5 10.5v7"/></svg></span>
+          <h3>Case Converter</h3>
+          <p>Switch between UPPERCASE, Title Case, Sentence case & more.</p>
+        </a>
+        <a class="tool-card c-teal" href="remove-extra-spaces.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4"/><path d="M4 4l5 5"/><path d="M15 20v-5h5"/><path d="M20 20l-5-5"/></svg></span>
+          <h3>Remove Extra Spaces</h3>
+          <p>Clean up messy whitespace, blank lines and line breaks.</p>
+        </a>
+        <a class="tool-card c-rose" href="text-reverser.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h11"/><path d="M15 4l3 3-3 3"/><path d="M17 17H6"/><path d="M9 20l-3-3 3-3"/></svg></span>
+          <h3>Text Reverser</h3>
+          <p>Reverse letters, word order, or line order instantly.</p>
+        </a>
+        <a class="tool-card c-green" href="duplicate-line-remover.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8"/><polyline points="3 14 12 19 21 14"/></svg></span>
+          <h3>Duplicate Line Remover</h3>
+          <p>Strip repeated lines from a list while keeping the order.</p>
+        </a>
+      </div>
+    </section>
+
+    <article class="content">
+      <h2>A free word counter for writers, students and editors</h2>
+      <p>Whether you're trimming an essay down to a strict word limit, checking a cover letter against a recruiter's guidelines, or making sure a meta description fits within Google's display limits, a reliable word count matters. This tool counts words, characters, sentences and paragraphs the moment you type or paste, so you always know exactly where you stand — no refreshing, no uploading a file, no waiting.</p>
+
+      <h2>How the word count works</h2>
+      <p>Word count is calculated by splitting your text on whitespace, which mirrors the method used by Microsoft Word and Google Docs. Character count includes every character — letters, numbers, punctuation and spaces — while the "characters without spaces" figure strips whitespace out, which is the number most publishing guidelines and academic style guides actually ask for.</p>
+      <p>Sentence count looks for periods, question marks and exclamation points that end a clause. Paragraph count treats each line separated by a blank line as one paragraph. Reading time is estimated at 200 words per minute, a standard adult silent-reading speed used by most editorial tools.</p>
+
+      <h2>Common word count limits</h2>
+      <ul>
+        <li><strong>Twitter/X post:</strong> 280 characters</li>
+        <li><strong>Google title tag:</strong> roughly 60 characters before truncation</li>
+        <li><strong>Google meta description:</strong> roughly 155–160 characters</li>
+        <li><strong>College application essay (Common App):</strong> 650 words</li>
+        <li><strong>Standard cover letter:</strong> 250–400 words</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>How is the word count calculated?</dt>
+        <dd>The tool splits your text on whitespace and counts each resulting chunk as one word, matching how word processors like Microsoft Word count words.</dd>
+
+        <dt>Does this word counter save or store my text?</dt>
+        <dd>No. All counting happens locally in your browser using JavaScript. Your text is never uploaded, sent to a server, or saved anywhere.</dd>
+
+        <dt>Is there a limit to how much text I can paste?</dt>
+        <dd>No fixed limit — the tool works entirely in your browser, so it can handle anything from a single sentence to a full chapter.</dd>
+
+        <dt>What reading speed is the reading time estimate based on?</dt>
+        <dd>200 words per minute, a commonly cited average for adult silent reading.</dd>
+      </dl>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="col brand-col">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+        </a>
+        <p>Free browser-based text tools. No sign-up, no limits, nothing stored.</p>
+      </div>
+      <div class="col">
+        <h4>Tools</h4>
+        <a href="index.html">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="bottom">&copy; 2026 WordTools. All rights reserved.</div>
+  </footer>
+
+<script src="assets/word-counter.js"></script>
+<script src="assets/nav.js"></script>
+</body>
+</html>

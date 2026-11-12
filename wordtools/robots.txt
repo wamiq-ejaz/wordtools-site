@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wamiq-ejaz.github.io/wordtools-site/sitemap.xml

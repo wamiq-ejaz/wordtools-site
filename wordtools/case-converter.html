@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Converter — UPPERCASE, lowercase, Title Case & More | WordTools</title>
+<meta name="description" content="Free online case converter. Instantly switch text to UPPERCASE, lowercase, Title Case, Sentence case, or aLtErNaTiNg case. No sign-up required.">
+<link rel="canonical" href="https://wamiq-ejaz.github.io/wordtools-site/case-converter.html">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Case Converter",
+  "url": "https://wamiq-ejaz.github.io/wordtools-site/case-converter.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body class="theme-amber">
+
+  <header class="site">
+    <div class="bar">
+      <a href="index.html" class="brand">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+      <nav class="site" id="site-nav">
+        <a href="index.html">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html" class="active">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Switch case in one click.</h1>
+        <p class="lede">Paste your text, then convert it to UPPERCASE, lowercase, Title Case, Sentence case, or aLtErNaTiNg case — instantly, right in your browser.</p>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <section class="tool" aria-label="Case converter tool">
+        <label for="text-input" class="tool-label">Your text</label>
+        <textarea id="text-input" class="input-area" placeholder="Type or paste your text here…"></textarea>
+
+        <div class="toolbar">
+          <button data-case="upper" type="button">UPPERCASE</button>
+          <button data-case="lower" type="button">lowercase</button>
+          <button data-case="title" type="button">Title Case</button>
+          <button data-case="sentence" type="button">Sentence case</button>
+          <button data-case="alt" type="button">aLtErNaTiNg</button>
+        </div>
+        <div class="toolbar">
+          <button id="btn-paste" type="button">Paste</button>
+          <button id="btn-copy" type="button">Copy result</button>
+          <button id="btn-clear" type="button" class="primary">Clear</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="n" id="stat-chars">0</span><span class="l">Characters</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="more-tools">
+      <h2>More free text tools</h2>
+      <div class="tool-grid">
+        <a class="tool-card c-blue" href="index.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/></svg></span>
+          <h3>Word Counter</h3>
+          <p>Count words, characters, sentences & reading time.</p>
+        </a>
+        <a class="tool-card c-purple" href="character-counter.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 12l4 8"/><path d="M17 4l4 8-4 8"/><line x1="10" y1="12" x2="14" y2="12"/></svg></span>
+          <h3>Character Counter</h3>
+          <p>Check length against Twitter, SMS & meta description limits.</p>
+        </a>
+        <a class="tool-card c-teal" href="remove-extra-spaces.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4"/><path d="M4 4l5 5"/><path d="M15 20v-5h5"/><path d="M20 20l-5-5"/></svg></span>
+          <h3>Remove Extra Spaces</h3>
+          <p>Clean up messy whitespace, blank lines and line breaks.</p>
+        </a>
+        <a class="tool-card c-rose" href="text-reverser.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h11"/><path d="M15 4l3 3-3 3"/><path d="M17 17H6"/><path d="M9 20l-3-3 3-3"/></svg></span>
+          <h3>Text Reverser</h3>
+          <p>Reverse letters, word order, or line order instantly.</p>
+        </a>
+        <a class="tool-card c-green" href="duplicate-line-remover.html">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8"/><polyline points="3 14 12 19 21 14"/></svg></span>
+          <h3>Duplicate Line Remover</h3>
+          <p>Strip repeated lines from a list while keeping the order.</p>
+        </a>
+      </div>
+    </section>
+
+    <article class="content">
+      <h2>When to use each case style</h2>
+      <p><strong>UPPERCASE</strong> suits headlines, acronyms and emphasis, but is hard to read at length. <strong>Title Case</strong> is the standard for headlines, book titles and article names in English style guides — this tool keeps short words like "a," "the" and "of" lowercase unless they start the sentence, matching common editorial style. <strong>Sentence case</strong> capitalizes only the first letter of each sentence, which is how most body text and UI labels should read.</p>
+
+      <h2>Why case matters for SEO and readability</h2>
+      <p>Search engines don't rank pages differently based on letter case, but readers do notice it. Titles in ALL CAPS are frequently perceived as shouting, while consistent Title Case across headings signals a polished, edited page — which keeps visitors reading longer.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Does Title Case capitalize every word?</dt>
+        <dd>No. Standard Title Case style keeps short connecting words (a, an, and, the, of, in, etc.) lowercase unless they're the first or last word of the title.</dd>
+        <dt>Is my text uploaded anywhere when I convert it?</dt>
+        <dd>No. The conversion runs entirely in your browser using JavaScript — nothing is sent to a server.</dd>
+      </dl>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="col brand-col">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7l2.3 10L10 10.5l2 6.5 2.3-10"/></svg></span>
+          <span class="word">Word</span><span class="tools">Tools</span>
+        </a>
+        <p>Free browser-based text tools. No sign-up, no limits, nothing stored.</p>
+      </div>
+      <div class="col">
+        <h4>Tools</h4>
+        <a href="index.html">Word Counter</a>
+        <a href="character-counter.html">Character Counter</a>
+        <a href="case-converter.html">Case Converter</a>
+        <a href="remove-extra-spaces.html">Remove Spaces</a>
+        <a href="text-reverser.html">Text Reverser</a>
+        <a href="duplicate-line-remover.html">Duplicate Lines</a>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="bottom">&copy; 2026 WordTools. All rights reserved.</div>
+  </footer>
+
+<script src="assets/case-converter.js"></script>
+<script src="assets/nav.js"></script>
+</body>
+</html>
